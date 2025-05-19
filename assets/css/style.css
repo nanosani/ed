@@ -1,0 +1,450 @@
+#edhsc * {
+    transition: 0.2s;
+}
+
+#edhsc #form-container {
+    margin: 20px 0px;
+    padding: 50px 20px;
+    background-color: #f0f9ff;
+    border-radius: 15px;
+}
+
+#edhsc #results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#edhsc #summary-container, #edhsc #score-container {
+    margin: 20px 0px;
+    padding: 30px 25px;
+    background-color: #f4fbff;
+    border-radius: 15px;
+}
+
+#edhsc .main-error {
+    background-color: #ffedeb;
+    border: 1px solid #efd8d5;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    display: none;
+}
+
+#edhsc .fieldsWrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+}
+
+#edhsc input {
+    padding: 0 1.2em 0 1.2em;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 380px;
+    line-height: 1;
+    border: 1px solid #dfdee1;
+    margin: unset;
+    height: 50px;
+}
+
+#edhsc #dkimSelectorInput {
+    max-width: 210px;
+}
+
+#edhsc .submit {
+    background-color: #e3402b;
+    border: none;
+    padding: 0 1.2em 0 1.2em;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    height: 50px;
+}
+
+#edhsc .submit:hover {
+    cursor: pointer;
+    background-color: #cd3421;
+}
+
+#edhsc * {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#edhsc .checks {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#edhsc .expanded .checks {
+    display: block;
+}
+
+#edhsc .handle {
+    width: 20px;
+    height: 20px;
+}
+
+#edhsc .blacklists {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#edhsc .expanded .blacklists {
+    display: flex;
+}
+
+#edhsc .expanded table {
+    display: table;
+    width: 100%;
+}
+
+#edhsc .expanded pre.record-text {
+    display: block;
+}
+
+
+#edhsc .expanded .details img.handle {
+    transform: rotate(180deg);
+}
+
+#edhsc .collapsed table {
+    display: none;
+}
+
+#edhsc .collapsed {
+    cursor: pointer;
+}
+
+#edhsc .expanded {
+    cursor: pointer;
+    margin-bottom: 1.5em;
+    padding: 25px !important;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 10%);
+}
+
+#edhsc .details {
+    display: none;
+    height: 20px;
+}
+
+#edhsc .statusContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#edhsc .status {
+    font-size: 14px;
+    line-height: 1.6;
+    min-width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+#edhsc .record {
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+}
+
+#edhsc .record:hover {
+    background-color: #fbfbfb;
+}
+
+#edhsc .expanded:hover {
+    background-color: #ffffff !important;
+}
+
+#edhsc img {
+    width: 23px;
+    height: 23px;
+}
+
+#edhsc .record-header {
+    min-width: 110px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 22px;
+}
+
+#edhsc pre.record-text {
+    font-size: 14px;
+    overflow: auto;
+    white-space: pre-wrap;
+    width: 100%;
+    color: #545b66;
+    background-color: #ecf6ff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: unset;
+    display: none;
+}
+
+#edhsc #mxRecord table th:nth-child(1), #edhsc #mxRecord td:nth-child(1) {
+    width: 10%;
+}
+
+#edhsc #mxRecord table th:nth-child(2), #edhsc #mxRecord td:nth-child(2) {
+    width: 20%;
+}
+
+#edhsc #mxRecord table th:nth-child(3), #edhsc #mxRecord td:nth-child(3) {
+    width: 20%;
+}
+
+#edhsc #mxRecord table th:nth-child(4), #edhsc #mxRecord td:nth-child(4) {
+    width: 50%;
+}
+
+#edhsc #spfRecord table th:nth-child(1), #edhsc #spfRecord td:nth-child(1) {
+    width: 10%;
+}
+
+#edhsc #spfRecord table th:nth-child(2), #edhsc #spfRecord table td:nth-child(2) {
+    width: 20%;
+}
+
+#edhsc #spfRecord table th:nth-child(3), #edhsc #spfRecord table td:nth-child(3) {
+    width: 20%;
+}
+
+#edhsc #spfRecord table th:nth-child(4), #edhsc #spfRecord table td:nth-child(4) {
+    width: 50%;
+}
+
+#edhsc #dmarcRecord table th:nth-child(1), #edhsc #dmarcRecord table td:nth-child(1) {
+    width: 10%;
+}
+
+#edhsc #dmarcRecord table th:nth-child(2), #edhsc #dmarcRecord table td:nth-child(2) {
+    width: 20%;
+}
+
+#edhsc #dmarcRecord table th:nth-child(3), #edhsc #dmarcRecord table td:nth-child(3) {
+    width: 20%;
+}
+
+#edhsc #dmarcRecord table th:nth-child(4), #edhsc #dmarcRecord table td:nth-child(4) {
+    width: 50%;
+}
+
+#edhsc #dkimRecordTable th:nth-child(1) {
+    width: 10%;
+}
+
+#edhsc #dkimRecordTable td:nth-child(1) {
+    width: 10%;
+}
+
+#edhsc #dkimRecordTable th:nth-child(2) {
+    width: 20%;
+}
+
+#edhsc #dkimRecordTable td:nth-child(2) {
+    width: 20%;
+}
+
+#edhsc #dkimRecordTable th:nth-child(3) {
+    width: 70%;
+}
+
+#edhsc #dkimRecordTable td:nth-child(3) {
+    width: 70%;
+    word-break: break-all;
+}
+
+#edhsc th,
+#edhsc td {
+    border: unset !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+    text-align: left;
+    padding: 5px 5px;
+}
+
+#edhsc th {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#edhsc td {
+    font-size: 13px;
+    word-break: break-all;
+}
+
+#edhsc table {
+    border-spacing: unset;
+    margin-top: 1em;
+    padding: 15px 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+}
+
+#edhsc tbody tr:last-child td {
+    border-bottom: unset !important;
+}
+
+#edhsc .scrollable-table-wrapper {
+    width: 100%;
+}
+
+#edhsc table:hover {
+    cursor: text;
+}
+
+#edhsc #dnsCheckResults div {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 13px;
+}
+
+#edhsc #dnsCheckResults div:last-child {
+    padding-bottom: 0px;
+    border-bottom: unset;
+    margin-bottom: 0px;
+}
+
+#edhsc .list-container {
+    display: flex;
+    column-gap: 5px;
+}
+
+#edhsc .result-icon {
+    width: 24px;
+    height: 24px;
+}
+
+#edhsc .conf-check {
+    width: calc(100% - 29px);
+}
+
+#edhsc #emailBlacklist .result-container {
+    border: 1px solid #e7e7e7;
+    background-color: #fdfdfd;
+    border-radius: 50px;
+    padding: 8px 15px 10px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    flex-wrap: wrap;
+}
+
+#edhsc #ipBlacklist .result-container {
+    border: 1px solid #e7e7e7;
+    background-color: #fdfdfd;
+    border-radius: 50px;
+    padding: 8px 15px 10px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    flex-wrap: wrap;
+}
+
+#edhsc .blocklist-name {
+    line-height: 1;
+}
+
+#edhsc .summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#edhsc .summary-item {
+    display: flex;
+    gap: 5px;
+}
+
+#edhsc .summary-text {
+    line-height: 1.3;
+}
+
+#edhsc img {
+    width: 20px;
+    height: 20px;
+    margin: unset;
+}
+
+#edhsc .copied {
+    font-size: 12px;
+    background-color: #38b26d;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#edhsc .overall-score {
+    color: #e3402b;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#edhsc .copyReportLink.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 480px) {
+  #edhsc .record-header {
+    font-size: 16px;
+  }
+  #edhsc .expanded {
+    padding: 20px 15px !important;
+  }
+  #edhsc .record {
+    padding: 15px;
+  }
+  #edhsc .fieldsWrapper {
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+  #edhsc #dkimSelectorInput {
+    max-width: 380px;
+  }
+  #edhsc .submit {
+    max-width: 380px;
+  }
+  #edhsc pre.record-text {
+    font-size: 12px;
+  }
+  #edhsc table {
+    padding: 10px 15px;
+    min-width: 700px;
+    line-height: 1.3;
+  }
+  #edhsc .scrollable-table-wrapper {
+    overflow-x: auto;
+  }
+  #edhsc th, #edhsc td {
+    padding: 10px 5px;
+  }
+  #edhsc #form-container {
+    padding: 50px 15px;
+  }
+  #edhsc #summary-container, #edhsc #score-container {
+    padding: 30px 15px;
+  }
+}
